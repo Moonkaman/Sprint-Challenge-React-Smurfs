@@ -68,9 +68,26 @@ ul {
     border-radius: 6px;
     padding: 5px;
     margin-bottom: 10px;
-    color: Black;
+    position: relative;
+}
+
+.Smurf:hover .delete-smurf {
+    opacity: 100;
 }
 
 .card-link {
     text-decoration: none;
+    color: Black;
+}
+
+.delete-smurf {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
 }

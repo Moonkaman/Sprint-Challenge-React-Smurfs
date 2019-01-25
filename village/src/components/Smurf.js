@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 const Smurf = props => {
   return (
-    <Link className='card-link' to={`/smurfs/${props.id}`} >
+    
       <div className="Smurf">
-        <h3>{props.name}</h3>
-        <strong>{props.height} tall</strong>
-        <p>{props.age} smurf years old</p>
+        <p className="delete-smurf" onClick={_ => props.removeSmurf(props.id)}>Delete</p>
+        <Link className='card-link' to={`/smurfs/${props.id}`} >
+          <h3>{props.name}</h3>
+          <strong>{props.height} tall</strong>
+          <p>{props.age} smurf years old</p>
+        </Link>
       </div>
-    </Link>
   );
 };
 
