@@ -19,7 +19,10 @@ class SmurfForm extends Component {
       age: this.state.age,
       height: this.state.height
     })
-      .then(res => console.log(res))
+      .then(res => {
+        this.props.updateState(res.data);
+        this.props.history.push('/');
+      })
       .catch(err => console.log(err));
 
     this.setState({
