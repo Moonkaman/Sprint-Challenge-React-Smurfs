@@ -1,0 +1,93 @@
+nav {
+    width: 100vw;
+    background: lightgray;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkgray;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a.active {
+    color: #3498db;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 4px gray;
+    border-radius: 6px;
+}
+
+form h2 {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+form input {
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 8px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+form button {
+    background: none;
+    border: none;
+    outline: none;
+    background: #3498db;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    padding: 8px 0;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #49aaeb;
+}
+
+ul {
+    padding: 0px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.Smurf {
+    box-shadow: 0 0 4px gray;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.Smurf:hover .delete-smurf {
+    opacity: 100;
+}
+
+.card-link {
+    text-decoration: none;
+    color: Black;
+}
+
+.delete-smurf {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
