@@ -14,7 +14,7 @@ nav a {
 }
 
 nav a.active {
-    color: gray;
+    color: #3498db;
 }
 
 form {
@@ -55,4 +55,17 @@ form button {
 
 form button:hover {
     background: #49aaeb;
+}
+
+ul {
+    padding: 0px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.Smurf {
+    box-shadow: 0 0 4px gray;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
