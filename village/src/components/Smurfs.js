@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import Smurf from './Smurf';
 
+
+//I know it's not good to have one css file for all components but I figured it wouldn't really matter here.
+import './Components.css';
+
 class Smurfs extends Component {
   render() {
     return (
